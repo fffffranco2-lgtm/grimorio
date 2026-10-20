@@ -321,7 +321,7 @@ function filtered(){
     if(st.method.size&&!st.method.has(c.m))return false;
     if(st.fav&&!USER[c.id]?.fav)return false;
     return true;
-  }).map(x=>x.c);
+  }).map(x=>x.c).sort((a,b)=>a.n.localeCompare(b.n,"pt-BR"));
 }
 
 function render(){
