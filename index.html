@@ -270,7 +270,7 @@ function savePrefs(){try{localStorage.setItem("grim-prefs",JSON.stringify({unit:
 function saveUser(){try{localStorage.setItem("grim-user",JSON.stringify(USER))}catch(e){}}
 
 // ─── carregar dados ───────────────────────────────────────────────────────────
-fetch("data/drinks.json")
+fetch("https://gist.githubusercontent.com/fffffranco2-lgtm/87fead960733fb51522fccc506e0b730/raw/drinks.json")
   .then(r=>r.json())
   .then(data=>{
     BOOKS=data.books;DRINKS=data.drinks;ORDER=Object.keys(BOOKS);
