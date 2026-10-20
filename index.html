@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Grimório de Drinks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root{
+  --paper:#faf8f3; --ink:#26221d; --muted:#7a7165; --rule:#ddd5c7; --accent:#7d2a22;
+  --ff-display:"Cormorant Garamond","Garamond",Georgia,serif;
+  --ff-body:"EB Garamond","Garamond",Georgia,serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:var(--ff-body);font-size:17px;line-height:1.55;font-variant-numeric:oldstyle-nums}
+button{all:unset;cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:1px dotted var(--accent);outline-offset:3px}
+.sc{font-variant-caps:all-small-caps;letter-spacing:.08em}
+
+.wrap{max-width:1180px;margin:0 auto;padding-inline:24px;padding-block:40px 64px}
+
+header.top{text-align:center;padding-bottom:22px;margin-bottom:32px;border-bottom:3px double var(--rule)}
+header.top h1{font-family:var(--ff-display);font-weight:500;font-size:clamp(38px,6vw,64px);line-height:1;margin:0;letter-spacing:.01em;text-wrap:balance}
+header.top .sub{margin:10px auto 0;color:var(--muted);font-style:italic;max-width:56ch}
+.units{margin-top:16px;display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:4px 10px;font-size:15px;color:var(--muted)}
+.units button{color:var(--muted)}
+.units button[aria-pressed="true"]{color:var(--ink);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.units select{font:inherit;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--rule);padding:0 2px}
+
+.grid{display:grid;grid-template-columns:250px minmax(0,1fr);gap:56px;align-items:start}
+@media(max-width:860px){.grid{grid-template-columns:minmax(0,1fr);gap:32px}}
+aside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px);display:flex;flex-direction:column;gap:18px}
+@media(max-width:860px){aside{position:static}}
+.search{width:100%;font:inherit;font-style:italic;padding:4px 0;border:0;border-bottom:1px solid var(--rule);background:transparent;color:var(--ink)}
+.search::placeholder{color:var(--muted)}
+.fgroup{display:flex;flex-direction:column;gap:2px}
+.fgroup h3{margin:0;font-weight:500;font-size:14px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:0 12px;font-size:15.5px}
+.chip{color:var(--muted)}
+.chip:hover{color:var(--ink)}
+.chip[aria-pressed="true"]{color:var(--accent);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.count{font-size:14px;color:var(--muted);font-style:italic}
+.list{display:flex;flex-direction:column;border-top:1px solid var(--rule);padding-top:8px;max-height:56vh;overflow:auto}
+@media(max-width:860px){.list{max-height:none}}
+.item{display:flex;align-items:baseline;gap:6px;padding:3px 0;font-size:17px}
+.item .nm{white-space:nowrap}
+.item .lead{flex:1;border-bottom:1px dotted var(--rule);transform:translateY(-4px);min-width:12px}
+.item .meta{font-style:italic;font-size:14px;color:var(--muted);white-space:nowrap}
+.item .fv{color:var(--accent);font-size:12px}
+.item:hover .nm{color:var(--accent)}
+.item[aria-current="true"] .nm{color:var(--accent);font-style:italic}
+.empty{padding:8px 0;color:var(--muted);font-style:italic}
+
+main{min-width:0}
+.head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 20px}
+.head h2{font-family:var(--ff-display);font-size:clamp(40px,5.5vw,60px);font-weight:500;margin:0;line-height:1;text-wrap:balance}
+.star{font-size:15px;color:var(--muted);font-style:italic}
+.star[aria-pressed="true"]{color:var(--accent)}
+.tags{margin:8px 0 0;color:var(--muted);font-size:15px}
+.summary{max-width:62ch;margin:14px 0 28px;font-size:18px}
+.versions{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:36px 0;border-top:1px solid var(--rule);padding-top:22px}
+.v{padding:0 22px;border-left:1px solid var(--rule);display:flex;flex-direction:column;gap:10px;min-width:0}
+.v .bk{font-size:14px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+.v .bk .yr{color:var(--accent)}
+.v h4{margin:0;font-family:var(--ff-display);font-style:italic;font-weight:500;font-size:23px;line-height:1.15}
+.method{font-size:14px;color:var(--muted);font-style:italic;margin-top:-6px}
+ul.ing{list-style:none;margin:2px 0;padding:0;font-size:16px}
+ul.ing li{display:flex;align-items:baseline;gap:6px;padding:1px 0}
+ul.ing .nmi{min-width:0}
+ul.ing .lead{flex:1;border-bottom:1px dotted var(--rule);transform:translateY(-4px);min-width:10px}
+ul.ing .q{white-space:nowrap;font-variant-numeric:lining-nums tabular-nums;font-size:15px}
+ul.ing .q.approx{color:var(--muted)}
+.prep{font-size:16px;margin:0;hyphens:auto}
+.note{font-size:15px;color:var(--muted);font-style:italic;margin:0}
+details.orig{font-size:15px}
+details.orig summary{cursor:pointer;color:var(--muted);list-style:none}
+details.orig summary::-webkit-details-marker{display:none}
+details.orig summary:hover{color:var(--accent)}
+details.orig[open] summary{color:var(--accent)}
+details.orig p{margin:6px 0 0;font-style:italic;color:var(--ink)}
+.serves{color:var(--accent);font-style:normal}
+
+.notes{margin-top:44px;max-width:640px}
+.notes h3{margin:0 0 4px;font-family:var(--ff-display);font-weight:500;font-size:24px}
+.notes textarea{font:inherit;width:100%;min-height:120px;padding:2px 0;border:0;background:transparent;color:var(--ink);resize:vertical;line-height:30px;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 29px,var(--rule) 29px,var(--rule) 30px);background-attachment:local}
+.notes textarea::placeholder{color:var(--muted);font-style:italic}
+.notes .st{font-size:14px;color:var(--muted);font-style:italic}
+.fleuron{text-align:center;color:var(--accent);margin:52px 0 18px;font-size:20px}
+footer.books{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px 28px;font-size:15px;color:var(--muted)}
+footer.books i{color:var(--ink)}
+footer.books .conv{grid-column:1/-1;border-top:1px solid var(--rule);padding-top:12px;font-size:14.5px}
+
+#loading{text-align:center;padding:80px 0;color:var(--muted);font-style:italic}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Grimório de Drinks</h1>
+    <p class="sub">Clássicos de manuais antigos e descobertas modernas, com versões de cada fonte lado a lado.</p>
+    <div class="units" role="group" aria-label="Unidades">
+      <span>Doses</span>
+      <button id="u-orig" aria-pressed="true">como na fonte</button>
+      <span>·</span>
+      <button id="u-ml" aria-pressed="false">em mililitros</button>
+      <span>·</span>
+      <label for="size">receitas em partes para</label>
+      <select id="size">
+        <option value="60">60 ml</option>
+        <option value="75" selected>75 ml</option>
+        <option value="90">90 ml</option>
+      </select>
+    </div>
+  </header>
+
+  <div id="loading">Carregando receitas…</div>
+
+  <div class="grid" hidden>
+    <aside>
+      <input id="q" class="search" type="search" placeholder="Procurar nome ou ingrediente…" aria-label="Buscar">
+      <div class="fgroup"><h3>Fonte</h3><div class="chips" id="f-book"></div></div>
+      <div class="fgroup"><h3>Base</h3><div class="chips" id="f-base"></div></div>
+      <div class="fgroup"><h3>Método</h3><div class="chips" id="f-method"></div></div>
+      <div class="fgroup"><div class="chips"><button class="chip" id="f-fav" aria-pressed="false">só os favoritos ✦</button></div></div>
+      <div class="count" id="count"></div>
+      <div class="list" id="list" role="list"></div>
+    </aside>
+    <main id="detail" aria-live="polite"></main>
+  </div>
+
+  <div class="fleuron" aria-hidden="true">❧</div>
+  <footer class="books" id="books"></footer>
+</div>
+
+<script>
+// ─── conversões ───────────────────────────────────────────────────────────────
+const JUICE_ML = { "laranja": 80, "limão": 30, "limão-siciliano": 40, "limão siciliano": 40 };
+const UNIT_ML  = { oz:30, jig:45, jigger:45, pony:30, med:30, tsp:5, tbsp:15, gl:60, vl:40, wg:60 };
+
+const FR = [[1/12,"1⁄12"],[1/8,"⅛"],[1/6,"⅙"],[1/4,"¼"],[1/3,"⅓"],[3/8,"⅜"],[1/2,"½"],[2/3,"⅔"],[3/4,"¾"]];
+function frac(x) {
+  const w = Math.floor(x+1e-9), r = x-w;
+  if (r < 1e-6) return String(w);
+  for (const [v,s] of FR) if (Math.abs(r-v) < 1e-3) return (w?w:"") + s;
+  return x.toFixed(2);
+}
+
+function qtyOrig(q) {
+  const {q:v, u, i} = q;
+  if (u === "qs" || v == null) return "—";
+  if (u === "p")    return frac(v) + " parte";
+  if (u === "dash") return v + (v>1?" dashes":" dash");
+  if (u === "drop") return v + (v>1?" gotas":" gota");
+  if (u === "un")   return frac(v);
+  if (u === "j")    return frac(v) + (v>1?" frutas":v===1?" fruta":" da fruta");
+  if (u === "ml")   return v + " ml";
+  const label = {oz:"oz",jig:"jigger",pony:"pony",med:"medida",tsp:"c. chá",tbsp:"c. sopa",gl:"copo",vl:"verre à liqueur",wg:"wineglass"}[u] || u;
+  return frac(v) + " " + label;
+}
+
+function qtyMl(q, size, sv) {
+  const {q:v, u, i} = q;
+  if (u === "qs" || v == null) return {t:"—"};
+  if (u === "dash" || u === "drop" || u === "un") return {t: qtyOrig(q)};
+  let ml = null, ap = false;
+  if (u === "p") { ml = v * size; }
+  else if (u === "j") {
+    const key = Object.keys(JUICE_ML).find(k => i.toLowerCase().includes(k)) || "limão";
+    ml = v * JUICE_ML[key]; ap = true;
+  }
+  else if (u === "ml") { ml = v; }
+  else { ml = v * (UNIT_ML[u] || 30); ap = !!(UNIT_ML[u] && u !== "ml"); }
+  if (sv) ml /= sv;
+  const r = ml < 10 ? Math.round(ml*2)/2 : Math.round(ml);
+  return { t: (ap?"≈ ":"") + r + " ml", ap };
+}
+
+// ─── estado ───────────────────────────────────────────────────────────────────
+const st = { q:"", books:new Set(), base:new Set(), method:new Set(), fav:false, unit:"orig", size:75, cur:null };
+let USER = {};
+let BOOKS = {}, DRINKS = [], ORDER = [], IDX = [];
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+
+try { const p = JSON.parse(localStorage.getItem("grim-prefs")||"{}"); if(p.unit)st.unit=p.unit; if(p.size)st.size=+p.size; if(p.cur)st.cur=p.cur; } catch(e){}
+try { USER = JSON.parse(localStorage.getItem("grim-user")||"{}"); } catch(e){}
+function savePrefs() { try { localStorage.setItem("grim-prefs", JSON.stringify({unit:st.unit,size:st.size,cur:st.cur})); } catch(e){} }
+function saveUser()  { try { localStorage.setItem("grim-user",  JSON.stringify(USER)); } catch(e){} }
+
+// ─── carregar dados ───────────────────────────────────────────────────────────
+fetch("data/drinks.json")
+  .then(r => r.json())
+  .then(data => {
+    BOOKS  = data.books;
+    DRINKS = data.drinks;
+    ORDER  = Object.keys(BOOKS);
+    IDX    = DRINKS.map(c => ({
+      c,
+      txt: norm([c.n, c.base, c.s,
+        ...c.versions.flatMap(v => [v.t, v.prep||"", v.original||"",
+          ...(v.ingredients||[]).map(i => i.i)])
+      ].join(" "))
+    }));
+
+    $("#loading").hidden = true;
+    $(".grid").hidden = false;
+
+    // filtros dinâmicos
+    chips($("#f-book"), ORDER, st.books, k => esc(BOOKS[k].t));
+    chips($("#f-base"), [...new Set(DRINKS.map(c=>c.base))], st.base);
+    chips($("#f-method"), ["Batido","Mexido","Montado"], st.method);
+    $("#f-fav").onclick = e => { st.fav=!st.fav; e.currentTarget.setAttribute("aria-pressed",st.fav); render(); };
+    $("#q").addEventListener("input", e => { st.q=e.target.value; render(); });
+    setUnit(st.unit);
+    $("#size").value = String(st.size);
+    $("#size").onchange = e => { st.size=+e.target.value; savePrefs(); renderDetail(); };
+
+    // rodapé
+    $("#books").innerHTML = ORDER.map(k => {
+      const b = BOOKS[k];
+      const yr = b.y ? String(b.y) : "atual";
+      return `<div><i>${esc(b.t)}</i>, ${yr}<br>${esc(b.a)} · em ${b.lang}</div>`;
+    }).join("") +
+    `<div class="conv">Conversões: 1 oz = 30 ml · jigger = 45 ml · pony = 30 ml · medida = 30 ml · c. chá = 5 ml · c. sopa = 15 ml · copo/wineglass = 60 ml · verre à liqueur = 40 ml. Estimativas (≈): suco de 1 limão-siciliano ≈ 40 ml, 1 limão ≈ 30 ml, 1 laranja ≈ 80 ml.</div>`;
+
+    render();
+  })
+  .catch(() => { $("#loading").textContent = "Erro ao carregar receitas. Abra via servidor local (npx serve .) ou Vercel."; });
+
+// ─── UI ───────────────────────────────────────────────────────────────────────
+function setUnit(u) {
+  st.unit = u;
+  $("#u-orig").setAttribute("aria-pressed", u==="orig");
+  $("#u-ml").setAttribute("aria-pressed",   u==="ml");
+  savePrefs(); renderDetail();
+}
+$("#u-orig").onclick = () => setUnit("orig");
+$("#u-ml").onclick   = () => setUnit("ml");
+
+function chips(el, vals, set, label) {
+  el.innerHTML = "";
+  vals.forEach(v => {
+    const b = document.createElement("button");
+    b.className = "chip";
+    b.setAttribute("aria-pressed","false");
+    b.innerHTML = label ? label(v) : esc(v);
+    b.onclick = () => { set.has(v) ? set.delete(v) : set.add(v); b.setAttribute("aria-pressed", set.has(v)); render(); };
+    el.appendChild(b);
+  });
+}
+
+function filtered() {
+  const q = norm(st.q.trim());
+  return IDX.filter(({c,txt}) => {
+    if (q && !q.split(/\s+/).every(w => txt.includes(w))) return false;
+    if (st.books.size  && !c.versions.some(v => st.books.has(v.b)))  return false;
+    if (st.base.size   && !st.base.has(c.base))   return false;
+    if (st.method.size && !st.method.has(c.m))    return false;
+    if (st.fav && !USER[c.id]?.fav) return false;
+    return true;
+  }).map(x => x.c);
+}
+
+function render() {
+  const L = filtered(), el = $("#list");
+  el.innerHTML = "";
+  $("#count").textContent = `${L.length} de ${DRINKS.length} drinks`;
+  if (!L.length) {
+    el.innerHTML = `<div class="empty">${st.fav ? "Marque favoritos com ✦ na ficha." : "Nenhum resultado. Tente outro ingrediente ou limpe os filtros."}</div>`;
+  }
+  L.forEach(c => {
+    const b = document.createElement("button");
+    b.className = "item";
+    b.setAttribute("role","listitem");
+    b.setAttribute("aria-current", c.id === st.cur);
+    b.innerHTML = `<span class="nm">${esc(c.n)}</span>${USER[c.id]?.fav?'<span class="fv">✦</span>':''}<span class="lead"></span><span class="meta">${esc(c.base.toLowerCase())}</span>`;
+    b.onclick = () => { st.cur=c.id; savePrefs(); render(); if(innerWidth<860) $("#detail").scrollIntoView({behavior:"smooth"}); };
+    el.appendChild(b);
+  });
+  if (!st.cur || !DRINKS.find(c => c.id === st.cur)) st.cur = (L[0]||DRINKS[0]).id;
+  renderDetail();
+}
+
+function renderDetail() {
+  const c = DRINKS.find(x => x.id === st.cur);
+  if (!c) return;
+  const u = USER[c.id] || {};
+  const vs = [...c.versions].sort((a,b) => ORDER.indexOf(a.b) - ORDER.indexOf(b.b));
+  const years = c.versions.map(v => BOOKS[v.b]?.y).filter(Boolean);
+  const yearRange = years.length
+    ? (Math.min(...years) === Math.max(...years) ? String(Math.min(...years)) : `${Math.min(...years)}–${Math.max(...years)}`)
+    : "";
+
+  $("#detail").innerHTML = `
+    <div class="head">
+      <h2>${esc(c.n)}</h2>
+      <button class="star" id="star" aria-pressed="${!!u.fav}">${u.fav?"✦ nos favoritos":"guardar nos favoritos"}</button>
+    </div>
+    <div class="tags">${esc(c.base)} · ${esc(c.m.toLowerCase())} · ${c.versions.length} versão${c.versions.length>1?"ões":""}${yearRange?" · "+yearRange:""}</div>
+    <p class="summary">${esc(c.s)}</p>
+    <div class="versions">${vs.map(v => card(v)).join("")}</div>
+    <div class="notes">
+      <h3>Notas de bancada</h3>
+      <textarea id="note" placeholder="Ex.: testei a versão do Bottoms Up com Tanqueray, ficou seco demais; próxima vez 4:1.">${esc(u.note||"")}</textarea>
+      <span class="st" id="nstat">Salvo neste navegador.</span>
+    </div>`;
+
+  $("#star").onclick = () => save(c.id, {fav: !u.fav});
+  const ta = $("#note");
+  let tmr;
+  ta.addEventListener("input", () => {
+    clearTimeout(tmr);
+    $("#nstat").textContent = "Salvando…";
+    tmr = setTimeout(() => save(c.id, {note: ta.value}), 700);
+  });
+}
+
+function card(v) {
+  const B = BOOKS[v.b] || {};
+  const yr = B.y || "";
+  const rows = (v.ingredients||[]).map(q => {
+    const r = st.unit === "ml" ? qtyMl(q, st.size, v.serves) : {t: qtyOrig(q)};
+    const has = r.t !== "—";
+    return `<li><span class="nmi">${esc(q.i)}</span>${has?`<span class="lead"></span><span class="q${r.ap?" approx":""}">${esc(r.t)}</span>`:""}</li>`;
+  }).join("");
+  const srcLink = v.source_url ? `<a href="${esc(v.source_url)}" target="_blank" rel="noopener" style="color:var(--muted);font-size:13px">fonte ↗</a>` : "";
+  return `<article class="v">
+    <div class="bk"><span class="sc">${esc(B.t||v.b)}</span><span class="yr">${yr}${srcLink?" · "+srcLink:""}</span></div>
+    <h4>${esc(v.t)}</h4>
+    <div class="method">${esc(v.m.toLowerCase())}${v.serves?` · <span class="serves">para ${v.serves} pessoas${st.unit==="ml"?", ml por drink":""}</span>`:""}</div>
+    <ul class="ing">${rows}</ul>
+    <p class="prep">${esc(v.prep||"")}</p>
+    ${v.note?`<p class="note">${esc(v.note)}</p>`:""}
+    ${v.original?`<details class="orig"><summary>ver o original em ${esc(B.lang||"inglês")} ›</summary><p>${esc(v.original)}</p></details>`:""}
+  </article>`;
+}
+
+function save(id, patch) {
+  USER[id] = {...(USER[id]||{}), ...patch};
+  if ("fav" in patch) render();
+  saveUser();
+  const n = $("#nstat"); if(n) n.textContent = "Salvo neste navegador.";
+}
+</script>
+</body>
+</html>

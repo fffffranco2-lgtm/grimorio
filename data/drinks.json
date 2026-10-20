@@ -1,0 +1,1885 @@
+{
+  "version": "1.0.0",
+  "books": {
+    "LAS": {
+      "t": "L'Art du Shaker",
+      "a": "Dominique Migliorero · Nice",
+      "y": 1925,
+      "lang": "francês"
+    },
+    "AoM": {
+      "t": "The Art of Mixing",
+      "a": "James A. Wiley",
+      "y": 1932,
+      "lang": "inglês"
+    },
+    "HW": {
+      "t": "Hollywood Cocktails",
+      "a": "Hollywood, EUA",
+      "y": 1933,
+      "lang": "inglês"
+    },
+    "BU": {
+      "t": "Bottoms Up",
+      "a": "First Ave. Wine & Liquor, NY",
+      "y": 1949,
+      "lang": "inglês"
+    },
+    "CyB": {
+      "t": "Cocktails y Bocaditos",
+      "a": "Buenos Aires",
+      "y": 1961,
+      "lang": "espanhol"
+    },
+    "DG": {
+      "t": "Difford's Guide",
+      "a": "diffordsguide.com",
+      "y": null,
+      "lang": "inglês"
+    }
+  },
+  "drinks": [
+    {
+      "id": "martini",
+      "n": "Martini (Dry)",
+      "base": "Gin",
+      "m": "Mexido",
+      "s": "Gin e vermute seco. A proporção vai de 1:1 em 1925 a 3:1 em 1961, e o Art of Mixing ainda chama de Martini a versão com vermute doce.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Martini Cocktail (Dry)",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Gin"
+            }
+          ],
+          "prep": "Gelar bem no copo de mistura, coar em taça de coquetel e esprimir um zeste de limão-siciliano por cima.",
+          "original": "1/2 Vermouth Français, 1/2 Gin. Bien glacer dans le verre à mélanges. Passer dans un verre à cocktail. Presser un zeste de citron par-dessus et servir."
+        },
+        {
+          "b": "AoM",
+          "t": "Martini Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Vermute italiano (doce)"
+            },
+            {
+              "u": "qs",
+              "i": "Bitters (opcional)"
+            }
+          ],
+          "prep": "Bater com bastante gelo e coar.",
+          "note": "O livro não tem um \"dry\": o Martini padrão leva vermute doce.",
+          "original": "To 2/3 Gin add 1/3 Italian Vermouth (a splash of any kind of bitters may be added). Ice a lot, Charleston the mixer and strain."
+        },
+        {
+          "b": "HW",
+          "t": "Martini (Dry) Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Dry gin"
+            }
+          ],
+          "prep": "Bater bem e coar em taça de coquetel.",
+          "original": "1/3 French Vermouth, 2/3 Dry Gin. Shake well and strain into cocktail glass."
+        },
+        {
+          "b": "BU",
+          "t": "Dry Martini Cocktail",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 45,
+              "u": "ml",
+              "i": "Dry gin"
+            },
+            {
+              "q": 22.5,
+              "u": "ml",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Bitter de laranja"
+            }
+          ],
+          "prep": "Mexer com gelo quebrado, coar em taça de 90 ml e servir com azeitona.",
+          "original": "1½ oz. Dry Gin, ¾ oz. French Vermouth, 1 Dash Orange Bitters. Stir well with cracked Ice, strain into 3 oz. Cocktail glass. Serve with an Olive."
+        },
+        {
+          "b": "CyB",
+          "t": "Martini Seco",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 3,
+              "u": "med",
+              "i": "Gin"
+            },
+            {
+              "q": 1,
+              "u": "med",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Bitter de laranja"
+            },
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Tira de casca de limão-siciliano"
+            },
+            {
+              "u": "qs",
+              "i": "Azeitona verde ou cebola pérola (opcional)"
+            }
+          ],
+          "prep": "No copo de mistura, bitter, vermute, gin e 3 colheres de gelo picado fino. Mexer até gelar, coar em taça de 100 ml, torcer a casca sobre a superfície.",
+          "original": "Vermouth francés 1 medida, Gin 3 medidas, Bitter de naranja 1 golpe, corteza de limón, aceituna verde o cebollita pickle (optativo). Revolver hasta que esté helado; colar en copa de 100 g."
+        }
+      ]
+    },
+    {
+      "id": "manhattan",
+      "n": "Manhattan",
+      "base": "Whisky",
+      "m": "Mexido",
+      "s": "Rye e vermute doce com bitters. Os livros oscilam entre 2:1 e 1:1, e só a partir de 1949 o bourbon aparece como alternativa.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Manhattan Cocktail",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Angostura"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Rye whisky"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Vermute de Turim (doce)"
+            }
+          ],
+          "prep": "Gelar no copo de mistura, coar em taça de coquetel, esprimir um zeste de limão-siciliano por cima e servir com cereja.",
+          "original": "2 traits d'Angostura, 1/2 Rye Whisky, 1/2 Vermouth Turin."
+        },
+        {
+          "b": "AoM",
+          "t": "Manhattan Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Angostura"
+            },
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Rye whiskey"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Vermute italiano (doce)"
+            }
+          ],
+          "prep": "Bater bem com gelo e servir com cereja.",
+          "original": "With 1 dash of Angostura bitters put 2/3 Rye Whiskey and 1/3 Italian Vermouth. Ice well, shake well, pour well. Serve with cherry."
+        },
+        {
+          "b": "HW",
+          "t": "Manhattan Cocktail (No. 2)",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Angostura"
+            },
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Canadian Club whisky"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Vermute italiano (doce)"
+            }
+          ],
+          "prep": "Bater bem, coar em taça de coquetel e servir com cereja.",
+          "original": "1 Dash Angostura Bitters, 2/3 Canadian Club Whisky, 1/3 Italian Vermouth. Shake well and strain into cocktail glass, with cherry."
+        },
+        {
+          "b": "BU",
+          "t": "Manhattan Cocktail",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Bitter aromático"
+            },
+            {
+              "q": 22.5,
+              "u": "ml",
+              "i": "Vermute italiano (doce)"
+            },
+            {
+              "q": 45,
+              "u": "ml",
+              "i": "Rye ou bourbon"
+            }
+          ],
+          "prep": "Mexer com gelo quebrado, coar em taça de 90 ml e servir com cereja.",
+          "original": "1 Dash Bitters, ¾ oz. Italian Vermouth, 1½ oz. Rye or Bourbon Whiskey. Stir well with cracked Ice, strain into 3 oz. Cocktail glass. Serve with a Cherry."
+        },
+        {
+          "b": "CyB",
+          "t": "Manhattan",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 2,
+              "u": "med",
+              "i": "Whisky"
+            },
+            {
+              "q": 1,
+              "u": "med",
+              "i": "Vermute doce"
+            },
+            {
+              "q": 3,
+              "u": "drop",
+              "i": "Angostura"
+            }
+          ],
+          "prep": "No copo de mistura, com 3 colheres de gelo picado fino. Mexer, gelar e servir coado em taça de 100 ml.",
+          "original": "Whisky 2 medidas, Vermouth dulce 1 medida, Angostura 3 gotas."
+        }
+      ]
+    },
+    {
+      "id": "bronx",
+      "n": "Bronx",
+      "base": "Gin",
+      "m": "Batido",
+      "s": "Um Martini \"perfeito\" (vermute seco e doce) com suco de laranja. O livro argentino amassa a laranja com casca dentro da coqueteleira.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Bronx Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.25,
+              "u": "j",
+              "i": "laranja"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Vermute italiano (doce)"
+            }
+          ],
+          "prep": "Bater na coqueteleira.",
+          "original": "Jus de 1/4 d'orange, 1/2 Gin, 1/4 Vermouth Français, 1/4 Vermouth Italien."
+        },
+        {
+          "b": "AoM",
+          "t": "Bronx Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "u": "qs",
+              "i": "Angostura"
+            },
+            {
+              "q": 0.25,
+              "u": "j",
+              "i": "laranja"
+            }
+          ],
+          "prep": "Bater muito e servir bem gelado.",
+          "note": "Só vermute seco, sem o italiano.",
+          "original": "To 1/3 Gin put 1/3 French Vermouth, a few drops Angostura bitters and the juice of a quarter of an orange."
+        },
+        {
+          "b": "HW",
+          "t": "Bronx Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.25,
+              "u": "j",
+              "i": "laranja"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Vermute italiano (doce)"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Dry gin"
+            }
+          ],
+          "prep": "Bater bem e coar em taça de coquetel.",
+          "original": "The Juice of 1/4 Orange, 1/4 French Vermouth, 1/4 Italian Vermouth, 1/2 Dry Gin. Shake well and strain into cocktail glass."
+        },
+        {
+          "b": "BU",
+          "t": "Bronx Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 30,
+              "u": "ml",
+              "i": "Dry gin"
+            },
+            {
+              "q": 15,
+              "u": "ml",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 15,
+              "u": "ml",
+              "i": "Vermute italiano (doce)"
+            },
+            {
+              "q": 0.25,
+              "u": "j",
+              "i": "laranja"
+            }
+          ],
+          "prep": "Bater com gelo quebrado, coar em taça de 90 ml e servir com uma fatia de laranja.",
+          "original": "1 oz. Dry Gin, ½ oz. French Vermouth, ½ oz. Italian Vermouth, Juice ¼ Orange."
+        },
+        {
+          "b": "CyB",
+          "t": "Bronx",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1.5,
+              "u": "med",
+              "i": "Gin"
+            },
+            {
+              "q": 0.5,
+              "u": "med",
+              "i": "Vermute italiano (doce)"
+            },
+            {
+              "q": 0.5,
+              "u": "med",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 0.25,
+              "u": "un",
+              "i": "Laranja, amassada com a casca"
+            }
+          ],
+          "prep": "Pôr tudo na coqueteleira com 3 colheres de gelo picado fino, inclusive a laranja amassada. Bater até gelar e coar em taça de 100 ml.",
+          "original": "Gin 1½ medidas, Vermouth italiano ½, Vermouth francés ½, Naranja machacada con cáscara ¼."
+        }
+      ]
+    },
+    {
+      "id": "alexander",
+      "n": "Alexander",
+      "base": "Gin",
+      "m": "Batido",
+      "s": "Gin, crème de cacao e creme de leite em quase todos os livros. O Art of Mixing já usa brandy, que viraria o Brandy Alexander de hoje.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Alexander Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Crème de cacao"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Creme de leite fresco"
+            }
+          ],
+          "prep": "Preparar na coqueteleira e bater bem. Coar e servir em taça de flip.",
+          "original": "1/3 Gin, 1/3 Cacao Chouva, 1/3 crème fraîche."
+        },
+        {
+          "b": "AoM",
+          "t": "Alexander Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Crème de cacao"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Brandy"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Creme de leite fresco"
+            }
+          ],
+          "prep": "Agitar bem com gelo e coar nas taças.",
+          "original": "Put 1/3 Creme de Cacao, 1/3 Brandy, and 1/3 fresh cream."
+        },
+        {
+          "b": "HW",
+          "t": "Alexander Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Dry gin"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Crème de cacao"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Creme de leite fresco"
+            }
+          ],
+          "prep": "Bater bem e coar em taça de coquetel.",
+          "original": "1/2 Dry Gin, 1/4 Creme de Cacao, 1/4 Sweet Cream."
+        },
+        {
+          "b": "BU",
+          "t": "Alexander Cocktail No. 1",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 30,
+              "u": "ml",
+              "i": "Dry gin"
+            },
+            {
+              "q": 30,
+              "u": "ml",
+              "i": "Crème de cacao"
+            },
+            {
+              "q": 30,
+              "u": "ml",
+              "i": "Creme de leite fresco"
+            }
+          ],
+          "prep": "Bater com gelo quebrado e coar em taça de 120 ml.",
+          "original": "1 oz. Dry Gin, 1 oz. Creme de Cacao, 1 oz. Sweet Cream."
+        },
+        {
+          "b": "CyB",
+          "t": "Alexander",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 2,
+              "u": "med",
+              "i": "Gin"
+            },
+            {
+              "q": 0.5,
+              "u": "med",
+              "i": "Crème de cacao"
+            },
+            {
+              "q": 1,
+              "u": "med",
+              "i": "Creme de leite fresco"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Açúcar refinado"
+            }
+          ],
+          "prep": "Bater na coqueteleira com 3 pedacinhos de gelo, coar e servir em taça de 120 ml.",
+          "original": "Crema de leche 1 medida, Crema de cacao ½ medida, Gin 2 medidas, Azúcar molido 1 cucharadita."
+        }
+      ]
+    },
+    {
+      "id": "clover-club",
+      "n": "Clover Club",
+      "base": "Gin",
+      "m": "Batido",
+      "s": "Gin, cítrico, clara e um toque rosado de granadina ou framboesa. Os livros de 1925 e 1932 ainda põem vermute.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Clover Club Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Clara de ovo"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Granadina"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Suco de limão-siciliano"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Vermute de Turim (doce)"
+            }
+          ],
+          "prep": "Preparar na coqueteleira, bater com força, coar e servir em taça de flip.",
+          "original": "1 blanc d'œuf, 1 cuillerée à café de Grenadine, 1/2 Gin, 1/4 jus de citron, 1/4 Vermouth Turin."
+        },
+        {
+          "b": "AoM",
+          "t": "Clover Club Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Clara de ovo"
+            },
+            {
+              "q": 1,
+              "u": "j",
+              "i": "limão"
+            },
+            {
+              "q": 0.167,
+              "u": "p",
+              "i": "Xarope de framboesa"
+            },
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 0.167,
+              "u": "p",
+              "i": "Vermute italiano (doce)"
+            }
+          ],
+          "prep": "Bater muito com gelo e servir.",
+          "original": "To the white of a country egg, add the juice of small lime (or 1/4 lemon), 1/6 raspberry syrup, 2/3 Gin, 1/6 Italian Vermouth."
+        },
+        {
+          "b": "HW",
+          "t": "Clover Club Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão-siciliano"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Granadina"
+            },
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Clara de ovo"
+            },
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Dry gin"
+            }
+          ],
+          "prep": "Bater bem e coar em taça média.",
+          "original": "The Juice of 1/2 Lemon or of 1 Lime, 1/3 Grenadine, The White of 1 Egg, 2/3 Dry Gin."
+        },
+        {
+          "b": "BU",
+          "t": "Clover Club Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 22.5,
+              "u": "ml",
+              "i": "Suco de limão-siciliano"
+            },
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Clara de ovo"
+            },
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Granadina"
+            },
+            {
+              "q": 45,
+              "u": "ml",
+              "i": "Dry gin"
+            }
+          ],
+          "prep": "Bater com gelo quebrado e coar.",
+          "original": "½ jigger Lemon Juice, White of One Egg, Dash of Grenadine, 1 jigger Dry Gin."
+        },
+        {
+          "b": "CyB",
+          "t": "Clover Club",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "tsp",
+              "i": "Granadina"
+            },
+            {
+              "q": 0.5,
+              "u": "un",
+              "i": "Clara de ovo"
+            },
+            {
+              "q": 1,
+              "u": "tbsp",
+              "i": "Suco de limão-siciliano"
+            },
+            {
+              "q": 1.5,
+              "u": "med",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 1.5,
+              "u": "med",
+              "i": "Dry gin"
+            }
+          ],
+          "prep": "Bater tudo na coqueteleira com 1 colher de gelo picado e coar em copo de 120 ml.",
+          "original": "Granadina ½ cucharadita, Clara de huevo ½, Jugo de limón 1 cucharada, Vermouth francés 1½ medidas, Dry gin 1½ medidas."
+        }
+      ]
+    },
+    {
+      "id": "bacardi",
+      "n": "Bacardi",
+      "base": "Rum",
+      "m": "Batido",
+      "s": "Rum branco cubano, limão e granadina: um daiquiri rosado. Nos anos 1930 era comum reforçar com gin.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Bacardi Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Rum Bacardi"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Suco de limão-siciliano"
+            },
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Granadina"
+            }
+          ],
+          "prep": "Bater na coqueteleira.",
+          "note": "Metade rum, metade suco — proporção incomum.",
+          "original": "1/2 Bacardi, 1/2 jus de citron, 2 traits sirop de Grenadine."
+        },
+        {
+          "b": "AoM",
+          "t": "Bacardi Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Granadina"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Rum Bacardi"
+            },
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão"
+            }
+          ],
+          "prep": "Bater e beber bem gelado.",
+          "original": "Stick 1 teaspoonful of Grenadine in a glass with 1/3 Gin and 2/3 Bacardi Rum, add the juice of half a fresh lime."
+        },
+        {
+          "b": "BU",
+          "t": "Bacardi Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 45,
+              "u": "ml",
+              "i": "Rum Bacardi"
+            },
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão"
+            },
+            {
+              "q": 0.5,
+              "u": "tsp",
+              "i": "Granadina"
+            }
+          ],
+          "prep": "Bater com gelo quebrado e coar em taça de 90 ml.",
+          "original": "1½ oz. Bacardi Rum, Juice ½ Lime, ½ Teaspoon Grenadine."
+        },
+        {
+          "b": "CyB",
+          "t": "Bacardi",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "tsp",
+              "i": "Granadina"
+            },
+            {
+              "q": 2.5,
+              "u": "med",
+              "i": "Rum branco"
+            },
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão-siciliano"
+            }
+          ],
+          "prep": "Bater com 2 colheres de gelo picado fino, gelar, coar e servir em taça de 90 ml.",
+          "original": "Granadina ½ cucharadita, Rhum blanco 2½ medidas, Limón ½ (el jugo)."
+        }
+      ]
+    },
+    {
+      "id": "daiquiri",
+      "n": "Daiquiri",
+      "base": "Rum",
+      "m": "Batido",
+      "s": "Rum, limão e açúcar. As versões de 1925 e 1932 adoçam com granadina, e o L'Art du Shaker usa laranja.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Dacqueri Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 2,
+              "u": "drop",
+              "i": "Granadina"
+            },
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "laranja"
+            },
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Rum Bacardi"
+            }
+          ],
+          "prep": "Bater na coqueteleira.",
+          "note": "Suco de laranja, não de limão.",
+          "original": "2 gouttes Grenadine, jus 1/2 orange, 2/3 Bacardi Rum."
+        },
+        {
+          "b": "AoM",
+          "t": "Dacqueri Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Rum Bacardi"
+            },
+            {
+              "q": 0.167,
+              "u": "p",
+              "i": "Granadina"
+            },
+            {
+              "q": 0.167,
+              "u": "p",
+              "i": "Suco de limão"
+            }
+          ],
+          "prep": "Misturar, gelar e beber.",
+          "original": "With 2/3 Bacardi, put 1/6 Grenadine, 1/6 juice of a fresh lime."
+        },
+        {
+          "b": "HW",
+          "t": "Cocktail Daiquiri",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 45,
+              "u": "ml",
+              "i": "Rum Bacardi"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Açúcar ou xarope"
+            },
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão"
+            }
+          ],
+          "prep": "Bater bem com gelo quebrado e servir frappé.",
+          "original": "1 Jigger of Bacardi, 1 Teaspoon of granulated sugar or sugared syrup, The Juice of 1/2 Green Lime."
+        },
+        {
+          "b": "BU",
+          "t": "Daiquiri Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "j",
+              "i": "limão"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Açúcar refinado"
+            },
+            {
+              "q": 45,
+              "u": "ml",
+              "i": "Rum"
+            }
+          ],
+          "prep": "Bater com gelo quebrado e coar em taça de 90 ml.",
+          "original": "Juice 1 Lime, 1 Teaspoon Powdered Sugar, 1½ oz. Rum."
+        },
+        {
+          "b": "CyB",
+          "t": "Daiquiri",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão-siciliano"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Açúcar"
+            },
+            {
+              "q": 2,
+              "u": "med",
+              "i": "Rum branco"
+            }
+          ],
+          "prep": "Bater com 3 colheres de gelo picado, coar e servir em taça de 80 ml.",
+          "original": "Limón chico, medio (el jugo), Azúcar 1 cucharadita, Rhum blanco 2 medidas."
+        }
+      ]
+    },
+    {
+      "id": "old-fashioned",
+      "n": "Old Fashioned",
+      "base": "Whisky",
+      "m": "Montado",
+      "s": "Açúcar, bitters e whisky montados no próprio copo. A guarnição vai de um zeste (1925) à salada de frutas (1949).",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Old Fashion Cocktail",
+          "m": "Montado",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "un",
+              "i": "Torrão de açúcar"
+            },
+            {
+              "q": 4,
+              "u": "dash",
+              "i": "Angostura"
+            },
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Pedra de gelo"
+            },
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Zeste de limão-siciliano"
+            },
+            {
+              "q": 1,
+              "u": "gl",
+              "i": "Rye whisky"
+            }
+          ],
+          "prep": "Montar numa taça de flip, mexer de leve e servir no mesmo copo.",
+          "original": "1/2 morceau de sucre, 4 traits d'Angostura sur le sucre, 1 morceau de glace, 1 zeste de citron, 1 verre de Rye Whisky."
+        },
+        {
+          "b": "HW",
+          "t": "Old-Fashioned Cocktail",
+          "m": "Montado",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Torrão de açúcar"
+            },
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Angostura"
+            },
+            {
+              "q": 1,
+              "u": "gl",
+              "i": "Rye ou Canadian Club"
+            }
+          ],
+          "prep": "Amassar o açúcar com os bitters, juntar uma pedra de gelo e o whisky. Decorar com casca torcida de limão-siciliano e fatia de laranja, em copo médio.",
+          "original": "1 Lump Sugar, 2 Dashes Angostura Bitters, 1 Glass Rye or Canadian Club Whisky."
+        },
+        {
+          "b": "BU",
+          "t": "Old Fashioned Cocktail",
+          "m": "Montado",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "un",
+              "i": "Torrão de açúcar"
+            },
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Bitter aromático"
+            },
+            {
+              "u": "qs",
+              "i": "Água para cobrir o açúcar"
+            },
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Cubo de gelo"
+            },
+            {
+              "q": 60,
+              "u": "ml",
+              "i": "Rye ou bourbon"
+            }
+          ],
+          "prep": "Cobrir o açúcar e os bitters com água e macerar bem. Juntar o gelo e o whisky e mexer. Casca torcida de limão-siciliano, fatias de laranja e limão.",
+          "original": "½ Lump Sugar, 2 Dashes Bitters, add enough Water to cover Sugar and muddle well, 1 Cube of Ice, 2 oz. Rye or Bourbon Whiskey."
+        },
+        {
+          "b": "CyB",
+          "t": "Old Fashioned",
+          "m": "Montado",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Torrão de açúcar"
+            },
+            {
+              "u": "qs",
+              "i": "Angostura"
+            },
+            {
+              "q": 1,
+              "u": "med",
+              "i": "Whisky"
+            },
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Casca de limão-siciliano"
+            },
+            {
+              "q": 0.5,
+              "u": "un",
+              "i": "Rodela de laranja"
+            },
+            {
+              "q": 2,
+              "u": "un",
+              "i": "Cubos de gelo"
+            }
+          ],
+          "prep": "No copo old fashioned, regar o torrão com Angostura e desmanchar com o socador. Juntar o whisky e o resto.",
+          "original": "Azúcar 1 pancito, Angostura c/n, Whisky 1 medida, corteza de limón, naranja ½ rodaja, hielo 2 cubitos."
+        }
+      ]
+    },
+    {
+      "id": "tom-collins",
+      "n": "Tom Collins",
+      "base": "Gin",
+      "m": "Montado",
+      "s": "Gin, limão-siciliano, açúcar e água com gás num copo alto. O livro argentino faz com whisky, que em outros livros é o John Collins.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Tom Collins",
+          "m": "Montado",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Pedra grande de gelo"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Xarope de açúcar"
+            },
+            {
+              "q": 1,
+              "u": "j",
+              "i": "limão-siciliano"
+            },
+            {
+              "q": 1,
+              "u": "vl",
+              "i": "Gin"
+            },
+            {
+              "u": "qs",
+              "i": "Água com gás gelada"
+            }
+          ],
+          "prep": "Montar num copo tumbler grande, completar com água com gás gelada, mexer bem.",
+          "original": "1 gros morceau de glace, 1 cuillerée à café de sirop de sucre, le jus d'un citron, 1 verre à liqueur de Gin. Remplir avec de l'eau de seltz glacée."
+        },
+        {
+          "b": "AoM",
+          "t": "Tom Collins",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Xarope de açúcar"
+            },
+            {
+              "q": 1,
+              "u": "j",
+              "i": "limão-siciliano"
+            },
+            {
+              "q": 1,
+              "u": "gl",
+              "i": "Gin"
+            },
+            {
+              "u": "qs",
+              "i": "Água com gás"
+            }
+          ],
+          "prep": "Bater com bastante gelo e completar com água com gás.",
+          "original": "To 1 teaspoonful of sugar syrup, the juice of 1 lemon, 1 portion of Gin, and plenty ice add 5 minutes labor. Dilute with seltzer."
+        },
+        {
+          "b": "BU",
+          "t": "Tom Collins",
+          "m": "Montado",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão-siciliano"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Açúcar refinado"
+            },
+            {
+              "q": 60,
+              "u": "ml",
+              "i": "Dry gin"
+            },
+            {
+              "u": "qs",
+              "i": "Água com gás"
+            }
+          ],
+          "prep": "Num copo Collins de 360 ml, com vários cubos de gelo. Completar com água com gás e mexer bem. Decorar com limão, laranja e cereja, servir com canudos.",
+          "original": "Juice ½ Lemon, 1 Teaspoon Powdered Sugar, 2 oz. Dry Gin. Pour into 12 oz. Tom Collins glass."
+        },
+        {
+          "b": "CyB",
+          "t": "Tom Collins",
+          "m": "Montado",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão-siciliano"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Açúcar"
+            },
+            {
+              "q": 1,
+              "u": "med",
+              "i": "Whisky"
+            },
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Rodela de limão ou laranja"
+            },
+            {
+              "u": "qs",
+              "i": "Água com gás"
+            }
+          ],
+          "prep": "Tudo menos a água com gás num copo de 300 ml com 3 colheres de gelo picado. Completar com água com gás, mexer e servir com canudos.",
+          "note": "Com whisky, não gin.",
+          "original": "Limón ½ (el jugo), Azúcar 1 cucharadita, Whisky 1 medida, soda a gusto."
+        }
+      ]
+    },
+    {
+      "id": "bamboo",
+      "n": "Bamboo",
+      "base": "Jerez",
+      "m": "Mexido",
+      "s": "Jerez seco e vermute seco com orange bitters: um aperitivo de baixo teor alcoólico.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Bamboo Cocktail",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Bitter de laranja"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Jerez seco (dry sherry)"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Vermute francês (seco)"
+            }
+          ],
+          "prep": "Gelar bem no copo de mistura e servir em taça de coquetel com uma cereja.",
+          "original": "1 trait orange Bitters, 1/2 Dry Sherry, 1/2 Vermouth Français."
+        },
+        {
+          "b": "AoM",
+          "t": "Bamboo Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Bitter de laranja"
+            },
+            {
+              "q": 0.5,
+              "u": "wg",
+              "i": "Jerez seco (dry sherry)"
+            },
+            {
+              "q": 0.5,
+              "u": "wg",
+              "i": "Vermute francês (seco)"
+            }
+          ],
+          "prep": "14 sacudidas e dividir entre as taças.",
+          "original": "To 1 dash orange bitters add ½ wineglass Dry Sherry, and ½ wineglass French Vermouth."
+        },
+        {
+          "b": "BU",
+          "t": "Bamboo Cocktail",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 60,
+              "u": "ml",
+              "i": "Jerez"
+            },
+            {
+              "q": 22.5,
+              "u": "ml",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Bitter de laranja"
+            }
+          ],
+          "prep": "Mexer com gelo quebrado e coar em taça de 90 ml.",
+          "original": "2 oz. Sherry, ¾ oz. French Vermouth, 1 Dash Orange Bitters."
+        }
+      ]
+    },
+    {
+      "id": "jack-rose",
+      "n": "Jack Rose",
+      "base": "Applejack / Calvados",
+      "m": "Batido",
+      "s": "Destilado de maçã, cítrico e granadina. Cada livro leva para um lado: com laranja, com vermutes ou com clara.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Jack Rose Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Granadina"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Calvados"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Suco de limão-siciliano"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Suco de laranja"
+            }
+          ],
+          "prep": "Bater na coqueteleira.",
+          "original": "2 traits de sirop de Grenadine, 1/2 Calvados, 1/4 jus de citron, 1/4 jus d'orange."
+        },
+        {
+          "b": "AoM",
+          "t": "Jack Rose Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Applejack"
+            },
+            {
+              "q": 0.167,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 0.083,
+              "u": "p",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 0.083,
+              "u": "p",
+              "i": "Vermute italiano (doce)"
+            },
+            {
+              "q": 0.167,
+              "u": "p",
+              "i": "Suco de laranja"
+            },
+            {
+              "q": 0.167,
+              "u": "p",
+              "i": "Suco de limão"
+            },
+            {
+              "u": "qs",
+              "i": "Granadina (até rosado)"
+            }
+          ],
+          "prep": "Bater e servir.",
+          "original": "Combine 1/3 Apple Jack, 1/6 Gin, 1/12 French Vermouth, 1/12 Italian Vermouth, 1/6 orange juice, 1/6 lime or lemon juice and Grenadine enough to color."
+        },
+        {
+          "b": "BU",
+          "t": "Jack Rose Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão"
+            },
+            {
+              "q": 1,
+              "u": "un",
+              "i": "Clara de ovo"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Granadina"
+            },
+            {
+              "q": 45,
+              "u": "ml",
+              "i": "Applejack"
+            }
+          ],
+          "prep": "Bater com gelo quebrado e coar.",
+          "original": "Juice ½ Lime, White of one Egg, 1 Teaspoon Grenadine, 1 Jigger Applejack."
+        }
+      ]
+    },
+    {
+      "id": "sidecar",
+      "n": "Sidecar",
+      "base": "Brandy",
+      "m": "Batido",
+      "s": "Brandy, Cointreau e limão-siciliano. A proporção vai de partes iguais (1949) a 8:2:1 na versão \"de luxe\" de 1961.",
+      "versions": [
+        {
+          "b": "HW",
+          "t": "Sidecar Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Suco de limão-siciliano"
+            },
+            {
+              "q": 0.25,
+              "u": "p",
+              "i": "Cointreau"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Brandy"
+            }
+          ],
+          "prep": "Bater bem e coar em taça de coquetel.",
+          "original": "1/4 Lemon Juice, 1/4 Cointreau, 1/2 Brandy."
+        },
+        {
+          "b": "BU",
+          "t": "Sidecar Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 0.333,
+              "u": "jig",
+              "i": "Suco de limão"
+            },
+            {
+              "q": 0.333,
+              "u": "jig",
+              "i": "Triple sec ou Cointreau"
+            },
+            {
+              "q": 0.333,
+              "u": "jig",
+              "i": "Brandy"
+            }
+          ],
+          "prep": "Juntar gelo raspado, bater e coar.",
+          "note": "Versão alternativa no livro: suco de ¼ limão-siciliano, 15 ml triple sec e 30 ml brandy.",
+          "original": "1/3 Jigger Lime Juice, 1/3 Jigger Triple Sec or Cointreau, 1/3 Jigger Brandy."
+        },
+        {
+          "b": "CyB",
+          "t": "Side Car de Luxe",
+          "m": "Batido",
+          "serves": 4,
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "med",
+              "i": "Cointreau ou triple sec"
+            },
+            {
+              "q": 2,
+              "u": "med",
+              "i": "Suco de limão-siciliano"
+            },
+            {
+              "q": 8,
+              "u": "med",
+              "i": "Cognac"
+            }
+          ],
+          "prep": "Pôr 1 copo de gelo picado fino na coqueteleira, juntar as bebidas e agitar vigorosamente. Coar em taças de 90 ml previamente geladas.",
+          "original": "Cointreau o triple seco 1 medida, Jugo de limón 2 medidas, Cognac 8 medidas."
+        }
+      ]
+    },
+    {
+      "id": "monkey-gland",
+      "n": "Monkey Gland",
+      "base": "Gin",
+      "m": "Batido",
+      "s": "Gin, laranja, granadina e um toque de absinto. Criação de Harry MacElhone, do Harry's New York Bar, em Paris.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Monkey-Gland Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Granadina"
+            },
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Absinto"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Suco de laranja"
+            }
+          ],
+          "prep": "Bater na coqueteleira.",
+          "note": "Receita creditada a Harry MacElhone, New-York Bar, Paris.",
+          "original": "1 cuillerée à café de Grenadine, 2 traits d'Absinthe, 1/2 Gin, 1/2 jus d'orange."
+        },
+        {
+          "b": "AoM",
+          "t": "Monkey's Gland Cocktail",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "dash",
+              "i": "Absinto"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Granadina"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Suco de laranja"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Gin"
+            }
+          ],
+          "prep": "Mexer bem.",
+          "note": "Mexido apesar do suco.",
+          "original": "Try 1 dash of Absinthe with 1 teaspoonful of Grenadine, 1/2 orange juice and 1/2 Gin. Stir well."
+        },
+        {
+          "b": "HW",
+          "t": "Monkey Gland Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 3,
+              "u": "dash",
+              "i": "Absinto"
+            },
+            {
+              "q": 3,
+              "u": "dash",
+              "i": "Granadina"
+            },
+            {
+              "q": 0.333,
+              "u": "p",
+              "i": "Suco de laranja"
+            },
+            {
+              "q": 0.667,
+              "u": "p",
+              "i": "Dry gin"
+            }
+          ],
+          "prep": "Bater bem e coar em taça de coquetel.",
+          "original": "3 Dashes Absinthe, 3 Dashes Grenadine, 1/3 Orange Juice, 2/3 Dry Gin."
+        }
+      ]
+    },
+    {
+      "id": "turf",
+      "n": "Turf",
+      "base": "Gin",
+      "m": "Mexido",
+      "s": "Gin e vermute seco perfumados com maraschino, absinto e orange bitters: parente do Martinez e do Tuxedo.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Turf Cocktail",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Bitter de laranja"
+            },
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Maraschino"
+            },
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Absinto"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Plymouth gin"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Vermute francês (seco)"
+            }
+          ],
+          "prep": "Copo de mistura.",
+          "note": "Receita creditada a Harry Johnson, New Orleans.",
+          "original": "2 traits d'orange bitters, 2 traits de Maraschino, 2 traits d'Absinthe, 1/2 Plymouth Gin, 1/2 Vermouth Français."
+        },
+        {
+          "b": "AoM",
+          "t": "Turf Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Bitter de laranja"
+            },
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Maraschino"
+            },
+            {
+              "q": 2,
+              "u": "dash",
+              "i": "Absinto"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Vermute francês (seco)"
+            },
+            {
+              "q": 0.5,
+              "u": "p",
+              "i": "Gin"
+            }
+          ],
+          "prep": "Agitar com gelo e servir sobre uma azeitona verde.",
+          "original": "Dash 2 dashes of orange bitters and 2 dashes of Maraschino into 2 dashes of Absinthe and ½ French Vermouth plus ½ Gin."
+        }
+      ]
+    },
+    {
+      "id": "whiskey-sour",
+      "n": "Whiskey Sour",
+      "base": "Whisky",
+      "m": "Batido",
+      "s": "Whisky, limão-siciliano e açúcar. Nos livros de 1925 e 1932 é só o Brandy Sour com whisky no lugar do brandy.",
+      "versions": [
+        {
+          "b": "LAS",
+          "t": "Whisky Sour",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Açúcar refinado"
+            },
+            {
+              "q": 1,
+              "u": "j",
+              "i": "limão-siciliano"
+            },
+            {
+              "q": 1,
+              "u": "vl",
+              "i": "Whisky"
+            }
+          ],
+          "prep": "Preparar na coqueteleira e servir em taça de flip.",
+          "note": "Remete ao Brandy Sour, trocando o cognac por whisky.",
+          "original": "Whisky Sour : voir Brandy Sour (remplacez le Cognac par du Whisky)."
+        },
+        {
+          "b": "AoM",
+          "t": "Whiskey Sour",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Açúcar ou xarope"
+            },
+            {
+              "q": 0.5,
+              "u": "j",
+              "i": "limão-siciliano"
+            },
+            {
+              "q": 1,
+              "u": "gl",
+              "i": "Whiskey"
+            },
+            {
+              "u": "qs",
+              "i": "Água com gás (toque)"
+            }
+          ],
+          "prep": "Bater com entusiasmo, coar no copo e completar com um toque de água com gás.",
+          "original": "Whiskey Sour: turn to Brandy Sour. 1 teaspoonful sugar or syrup, juice of half a lemon, 1 glass Brandy."
+        },
+        {
+          "b": "BU",
+          "t": "Whiskey Sour",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 22.5,
+              "u": "ml",
+              "i": "Suco de limão-siciliano e limão"
+            },
+            {
+              "q": 1,
+              "u": "tsp",
+              "i": "Açúcar refinado"
+            },
+            {
+              "q": 45,
+              "u": "ml",
+              "i": "Whiskey"
+            }
+          ],
+          "prep": "Bater com gelo quebrado e coar.",
+          "original": "½ Jigger Lemon and Lime Juice, 1 Teaspoon Powdered Sugar, 1 Jigger Whiskey."
+        }
+      ]
+    },
+    {
+      "id": "count-tawny-of-negroni",
+      "n": "Count Tawny of Negroni",
+      "base": "Gin",
+      "m": "Mexido",
+      "s": "Negroni com porto tawny no lugar do vermute.",
+      "versions": [
+        {
+          "b": "DG",
+          "t": "Count Tawny of Negroni",
+          "m": "Mexido",
+          "ingredients": [
+            {
+              "q": 37.5,
+              "u": "ml",
+              "i": "Gin London Dry"
+            },
+            {
+              "q": 30,
+              "u": "ml",
+              "i": "Tawny Port (gelado)"
+            },
+            {
+              "q": 22.5,
+              "u": "ml",
+              "i": "Bitter vermelho (estilo Campari)"
+            }
+          ],
+          "prep": "Mexer com gelo → coar em copo rocks com gelo → garnish casca de laranja.",
+          "source_url": "https://www.diffordsguide.com/cocktails/recipe/42826/count-tawny-of-negroni"
+        }
+      ]
+    },
+    {
+      "id": "veritas",
+      "n": "Veritas",
+      "base": "Gin",
+      "m": "Batido",
+      "s": "Gin margarita com float de casis. Adaptado de Trader Vic, 1947.",
+      "versions": [
+        {
+          "b": "DG",
+          "t": "Veritas",
+          "m": "Batido",
+          "ingredients": [
+            {
+              "q": 37.5,
+              "u": "ml",
+              "i": "Gin London Dry"
+            },
+            {
+              "q": 22.5,
+              "u": "ml",
+              "i": "Triple sec (Cointreau)"
+            },
+            {
+              "q": 22.5,
+              "u": "ml",
+              "i": "Suco de limão (fresco)"
+            },
+            {
+              "q": 5,
+              "u": "ml",
+              "i": "Xarope rico (2:1, 65°Brix)"
+            },
+            {
+              "q": 2,
+              "u": "drop",
+              "i": "Solução salina (20 g sal : 80 g água) — opcional"
+            },
+            {
+              "q": 2.5,
+              "u": "ml",
+              "i": "Crème de cassis"
+            }
+          ],
+          "prep": "Shake os 5 primeiros ingredientes com gelo → coar fino em coupe gelado → drizzle do crème de cassis no centro (afunda) → garnish gomo de limão na borda.",
+          "source_url": "https://www.diffordsguide.com/cocktails/recipe/42995/veritas"
+        }
+      ]
+    }
+  ]
+}
