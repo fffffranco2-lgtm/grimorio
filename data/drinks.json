@@ -36,6 +36,12 @@
       "a": "diffordsguide.com",
       "y": null,
       "lang": "inglês"
+    },
+    "HABC": {
+      "t": "Harry's ABC of Mixing Cocktails",
+      "a": "Harry MacElhone",
+      "y": 1919,
+      "lang": "inglês"
     }
   },
   "drinks": [
@@ -1878,6 +1884,48 @@
           ],
           "prep": "Shake os 5 primeiros ingredientes com gelo → coar fino em coupe gelado → drizzle do crème de cassis no centro (afunda) → garnish gomo de limão na borda.",
           "source_url": "https://www.diffordsguide.com/cocktails/recipe/42995/veritas"
+        }
+      ]
+    },
+    {
+      "id": "parisian-cocktail",
+      "n": "Parisian Cocktail",
+      "base": "Gin",
+      "m": "Batido",
+      "s": "Trio igual de gin, vermute francês e cassis. Receita nº 212 do Harry's ABC.",
+      "versions": [
+        {
+          "b": "HABC",
+          "t": "Parisian Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            { "q": 1, "u": "p", "i": "Gin" },
+            { "q": 1, "u": "p", "i": "French Vermouth (seco)" },
+            { "q": 1, "u": "p", "i": "Cassis" }
+          ],
+          "prep": "Shake com gelo → coar.",
+          "original": "⅓ Gin, ⅓ French Vermouth, ⅓ Cassis."
+        }
+      ]
+    },
+    {
+      "id": "perfect-cocktail",
+      "n": "Perfect Cocktail",
+      "base": "Gin",
+      "m": "Batido",
+      "s": "Gin com vermute italiano e francês em partes iguais. Receita nº 214 do Harry's ABC.",
+      "versions": [
+        {
+          "b": "HABC",
+          "t": "Perfect Cocktail",
+          "m": "Batido",
+          "ingredients": [
+            { "q": 1, "u": "p", "i": "Gin" },
+            { "q": 1, "u": "p", "i": "Italian Vermouth (doce)" },
+            { "q": 1, "u": "p", "i": "French Vermouth (seco)" }
+          ],
+          "prep": "Shake bem com gelo → coar em copo de coquetel → squeeze de casca de laranja por cima.",
+          "original": "⅓ Gin, ⅓ Italian Vermouth, ⅓ French Vermouth. Shake well, strain into cocktail glass, squeeze orange peel on top."
         }
       ]
     }
