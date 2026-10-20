@@ -1891,19 +1891,19 @@
       "id": "parisian-cocktail",
       "n": "Parisian Cocktail",
       "base": "Gin",
-      "m": "Batido",
+      "m": "Mexido",
       "s": "Trio igual de gin, vermute francês e cassis. Receita nº 212 do Harry's ABC.",
       "versions": [
         {
           "b": "HABC",
           "t": "Parisian Cocktail",
-          "m": "Batido",
+          "m": "Mexido",
           "ingredients": [
             { "q": 1, "u": "p", "i": "Gin" },
             { "q": 1, "u": "p", "i": "French Vermouth (seco)" },
             { "q": 1, "u": "p", "i": "Cassis" }
           ],
-          "prep": "Shake com gelo → coar.",
+          "prep": "Mexer com gelo → coar.",
           "original": "⅓ Gin, ⅓ French Vermouth, ⅓ Cassis."
         }
       ]
@@ -1912,19 +1912,19 @@
       "id": "perfect-cocktail",
       "n": "Perfect Cocktail",
       "base": "Gin",
-      "m": "Batido",
+      "m": "Mexido",
       "s": "Gin com vermute italiano e francês em partes iguais. Receita nº 214 do Harry's ABC.",
       "versions": [
         {
           "b": "HABC",
           "t": "Perfect Cocktail",
-          "m": "Batido",
+          "m": "Mexido",
           "ingredients": [
             { "q": 1, "u": "p", "i": "Gin" },
             { "q": 1, "u": "p", "i": "Italian Vermouth (doce)" },
             { "q": 1, "u": "p", "i": "French Vermouth (seco)" }
           ],
-          "prep": "Shake bem com gelo → coar em copo de coquetel → squeeze de casca de laranja por cima.",
+          "prep": "Mexer com gelo → coar em copo de coquetel → squeeze de casca de laranja por cima.",
           "original": "⅓ Gin, ⅓ Italian Vermouth, ⅓ French Vermouth. Shake well, strain into cocktail glass, squeeze orange peel on top."
         }
       ]
