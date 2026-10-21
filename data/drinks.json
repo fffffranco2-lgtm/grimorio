@@ -37,6 +37,12 @@
       "y": null,
       "lang": "inglês"
     },
+    "PUNCH": {
+      "t": "PUNCH",
+      "a": "punchdrink.com",
+      "y": null,
+      "lang": "inglês"
+    },
     "HABC": {
       "t": "Harry's ABC of Mixing Cocktails",
       "a": "Harry MacElhone",
@@ -1834,7 +1840,7 @@
               "i": "Bitter vermelho (estilo Campari)"
             }
           ],
-          "prep": "Mexer com gelo → coar em copo rocks com gelo → garnish casca de laranja.",
+          "prep": "Mexer com gelo, coar em copo rocks com gelo e guarnecer com casca de laranja.",
           "source_url": "https://www.diffordsguide.com/cocktails/recipe/42826/count-tawny-of-negroni"
         }
       ]
@@ -1882,7 +1888,7 @@
               "i": "Crème de cassis"
             }
           ],
-          "prep": "Shake os 5 primeiros ingredientes com gelo → coar fino em coupe gelado → drizzle do crème de cassis no centro (afunda) → garnish gomo de limão na borda.",
+          "prep": "Agitar os cinco primeiros ingredientes com gelo e coar fino em coupe gelado. Drizzle do crème de cassis no centro, que afunda. Guarnecer com gomo de limão na borda.",
           "source_url": "https://www.diffordsguide.com/cocktails/recipe/42995/veritas"
         }
       ]
@@ -1899,11 +1905,23 @@
           "t": "Parisian Cocktail",
           "m": "Mexido",
           "ingredients": [
-            { "q": 1, "u": "p", "i": "Gin" },
-            { "q": 1, "u": "p", "i": "French Vermouth (seco)" },
-            { "q": 1, "u": "p", "i": "Cassis" }
+            {
+              "q": 1,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 1,
+              "u": "p",
+              "i": "French Vermouth (seco)"
+            },
+            {
+              "q": 1,
+              "u": "p",
+              "i": "Cassis"
+            }
           ],
-          "prep": "Mexer com gelo → coar.",
+          "prep": "Mexer com gelo e coar em taça de coquetel.",
           "original": "⅓ Gin, ⅓ French Vermouth, ⅓ Cassis."
         }
       ]
@@ -1920,12 +1938,47 @@
           "t": "Perfect Cocktail",
           "m": "Mexido",
           "ingredients": [
-            { "q": 1, "u": "p", "i": "Gin" },
-            { "q": 1, "u": "p", "i": "Italian Vermouth (doce)" },
-            { "q": 1, "u": "p", "i": "French Vermouth (seco)" }
+            {
+              "q": 1,
+              "u": "p",
+              "i": "Gin"
+            },
+            {
+              "q": 1,
+              "u": "p",
+              "i": "Italian Vermouth (doce)"
+            },
+            {
+              "q": 1,
+              "u": "p",
+              "i": "French Vermouth (seco)"
+            }
           ],
-          "prep": "Mexer com gelo → coar em copo de coquetel → squeeze de casca de laranja por cima.",
+          "prep": "Mexer com gelo e coar em taça de coquetel. Esprimir casca de laranja por cima.",
           "original": "⅓ Gin, ⅓ Italian Vermouth, ⅓ French Vermouth. Shake well, strain into cocktail glass, squeeze orange peel on top."
+        }
+      ]
+    },
+    {
+      "id": "lonnies-between-the-sheets",
+      "n": "Lonnie's Between the Sheets",
+      "base": "Brandy",
+      "m": "Batido",
+      "s": "Versão moderna do clássico rum-and-brandy sour dos anos 1930. Ryan Gannon, Lonnie's, Brooklyn.",
+      "versions": [
+        {
+          "b": "PUNCH",
+          "t": "Lonnie's Between the Sheets",
+          "m": "Batido",
+          "ingredients": [
+            { "q": 30,   "u": "ml",   "i": "Cognac" },
+            { "q": 30,   "u": "ml",   "i": "Rum branco envelhecido" },
+            { "q": 22.5, "u": "ml",   "i": "Triple sec" },
+            { "q": 15,   "u": "ml",   "i": "Suco de limão (fresco)" },
+            { "q": 2,    "u": "dash", "i": "Orange bitters" }
+          ],
+          "prep": "Shake com gelo → coar em Nick and Nora gelado → expressar casca de limão sobre o drink e descartar.",
+          "source_url": "https://punchdrink.com/recipes/lonnies-between-the-sheets/"
         }
       ]
     }
